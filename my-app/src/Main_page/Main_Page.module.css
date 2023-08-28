@@ -1,0 +1,79 @@
+/* MainPage.module.css */
+.mainPage {
+    height: auto;
+    display: flex; /* Set flex display */
+    align-items: center;
+    padding: 30px;
+    background-color: #fdfcfc;
+    /* border-bottom: 1px solid #ccc; */
+  }
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+  }
+  
+  .mainImage {
+    max-width: 100%;
+  }
+  
+  .textContainer {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2f2e41;
+    text-align: center;
+  }
+  
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .buttonContainer {
+    flex: 1; /* Take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {
+    margin: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    border: 1px solid #6c63ff;
+    color: #fdfcfc;
+  }
+
+  @media (min-width: 230px) and (max-width: 900px) {
+    .mainPage {
+      flex-direction:column; /* Horizontal layout */
+    }
+  
+    .header {
+      justify-content: flex-start;
+    }
+  
+    .contentContainer {
+      flex-direction:column;
+    }
+  }
